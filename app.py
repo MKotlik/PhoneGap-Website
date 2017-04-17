@@ -23,6 +23,21 @@ def why():
 def how():
     return render_template("how.html")
 
+@app.route('/compatibility')
+def comp():
+    return render_template("comp.html")
+
+@app.route('/downsides')
+def down():
+    return render_template("down.html")
+
+@app.route('/walkthrough')
+def walk():
+    return render_template("walk.html")
+
+
+
+
 
 
 if __name__ == '__main__':

@@ -9,30 +9,33 @@
     <link rel="stylesheet" href="../static/css/app.css">
   </head>
 
-<div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      
-      <li class="menu-text">Phone Gap</li>
-      <li>
-        <a href="#">One</a>
-        <ul class="menu vertical">
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Why Use Phone Gap</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+	
+	<li class="menu-text">Phone Gap</li>
+	<li><a href="/">Back to Front</a></li>
+	<li>
+          <a href="#">Go To</a>
+          <ul class="menu vertical">
+            <li><a href="/whyPhoneGap">Why learn Phone Gap</a></li>
+            <li><a href="/howItWorks">How Phone Gap Works</a></li>
+            <li><a href="/walkthrough">Walkthrough</a></li>
+	    <li><a href="/compatibility">Compatibility</a></li>
+	    <li><a href="/downsides">Downsides to Phone Gap</a></li>
+          </ul>
+	</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+	<li><input type="search" placeholder="Search"></li>
+	<li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
   </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button">Search</button></li>
-    </ul>
-  </div>
-</div>
+  <!-- END TOP BAR -->
 
 
   <body>
@@ -41,6 +44,13 @@
         <h1>Phone Gap</h1>
       </div>
     </div>
+    
+    <!--
+    <div>
+      <img src="../static/logo.jpeg">
+    </div>
+    -->
+
     <div class="row">
       <div class="large-12 columns">
         <div class="callout">
@@ -49,137 +59,104 @@
           
           <div class="row">
             <div class="large-4 medium-4 columns">
-              <p><a href="whyPhoneGap">Why Phone Gap</a> <br> </p>
+              <p>
+		<a href="whyPhoneGap">Why Phone Gap</a> <br>
+		Learn more about why Phone Gap is the appropriate tool for your own mobile devolpment needs
+	      </p>
             </div>
             <div class="large-4 medium-4 columns">
-              <p><a href="howItWorks">How it works</a></p>
+              <p>
+		<a href="howItWorks">How it works</a>
+		<br>
+		Learn more about the the processes and procedures that allow for mobile applictions to be devolped with HTML, CSS, and JS
+	      </p>
             </div>
             <div class="large-4 medium-4 columns">
-              <p>Walkthrough</p>
+              <a href="walkthrough">Walkthrough</a>
+	      <br>
+	      Phone Gap, while easy to use, is somewhat complicated (at least at first), to make your life easier here is a quick walkthrough
             </div>
-	    
+	  </div>
+
+	  <div class="row">
+            <div class="large-4 medium-4 large-offset-2 columns">
+              <p>
+		<a href="compatibility">Compatibility</a> <br>
+		Let's make sure that your Phone Gap projects are supported on all platforms 
+	      </p>
+            </div>
+            <div class="large-4 medium-4 columns end">
+              <p>
+		<a href="downsides">Downsides to Phone Gap</a>
+		<br>
+		Allthough Phone Gap is a terrific tool, there are (as with everything) some downsides
+	      </p>
+            </div>    
           </div>
-        </div>
+
+	  
+	</div>
       </div>
     </div>
 
     <div class="row">
       <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
+        <h5>About Phone Gap</h5>
         <!-- Grid Example -->
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
+	<ul>
+	  <li>Its open source, which means that people like you and me can have access to the product, and that the software for Phone Gap is readily available for and to all/li>
+	  <li>Was recentlly bough by Adobe, they changed Phone Gap's name to Cordova (We all know which one sounds better though)</li>
+	  <li> Phone Gap is used by some of these notable organizations:
+	     <ul style="list-style-type:circle">
+	       <li>Wikipedia</li>
+	       <li>Facebook</li>
+	       <li>IBM</li>
+	       <li>Microsoft</li>
+	       <li>Adobe</li>
+	       <li>TimeWarner</li>
+	       <li>The Onion</li>
+	       <li>More information is available
+		 <a href="http://www.tricedesigns.com/2012/03/27/who-uses-phonegapapache-cordova/">here</a></li>
+	     </ul> 
+	  </li>
+	</ul>
+	<br>
+	
+        
       </div>
 
       <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>
         <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+          <h5>More Reasources</h5>
+
+	  <p>
+	    The Phone Gap website is overflowing with everything that a budding mobile phone developer could use
+	  </p>
+          <a href="http://phonegap.com/" class="small button">Go to Phone Gap Website</a>
+	  
+	  <p>
+	    Phone Gap, as it is open source, also has its own github
+	  </p>
+	  <a href="https://github.com/phonegap/" class="small button">Go to Phone Gap Github</a>
+	  
+	  <p>
+	    Phone Gap is also active on various social media sites
+	  </p>
+	  <a href="https://twitter.com/phonegap?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="small button">Go to Phone Gap's twitter</a>
+	  <br>
+	  <a href="https://www.facebook.com/PhoneGap/" class="small button">Go to Phone Gap's Facebook Page</a>
+	  
         </div>
       </div>
     </div>
 
+
+    <hr>
+    Created by Felix Rieg-Baumhauer, Misha Kotlik
+    
+
+    
     <script src="../static/js/vendor/jquery.js"></script>
     <script src="../static/js/vendor/what-input.js"></script>
     <script src="../static/js/vendor/foundation.js"></script>
