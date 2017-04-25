@@ -44,7 +44,165 @@
   <div class="row">
     <div class="large-12 columns">
       <h1>Walkthrough</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Development Procedure</h3>
+      <p>
+        Let's walk through the basic development process for a PhoneGap app.
+      </p>
+      <span>In order to make and test your app, you'll have to: </span>
+      <ol>
+        <li>Install the PhoneGap CLI.</li>
+        <li>Create a GitHub repo for the project (necessary for the build service).</li>
+        <li>Create a blank PhoneGap app</li>
+        <li>Set app descriptors, preferences, and plugins in config.xml</li>
+        <li>Write your HTML, CSS, and JS.</li>
+        <li>Test in the browser, or on PhoneGap's mobile developer app</li>
+        <li>Push and build on the PhoneGap Build Service.</li>
+      </ol>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Install PhoneGap CLI</h3>
+      <ul>
+        <li>
+          PhoneGap projects are written on a desktop through either the Desktop App or the CLI program
+        </li>
+        <li>
+          PhoneGap CLI requires node.js, and can be installed through npm:
+          <br />
+          <code>
+          $ npm install -g phonegap@latest
+          </code>
+        </li>
+        <li>
+          All phonegap commands start with <code>$ phonegap</code>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Create a GitHub Repository</h3>
+      <p>
+        Make sure to make the GitHub repo public and initialized with a README.
+      </p>
+      <img src="img/walk/PhoneGapRepo.PNG" width="600" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Create a Blank App</h3>
+      <p>
+        Create a blank project in the GitHub repo with the follow CLI commmand:
+        <br />
+        <code>$ phonegap create -n TestApp --template blank app</code>
+      </p>
+      <img src="img/walk/create_app.PNG" width="600" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Project Structure</h3>
+      <p>
+        The basic structure of a PhoneGap project consists of a config.xml file (which contains the settings and properties of the app), a www folder, and often a merges folder. The www folder contains the core files of the app, and the merges folder contains
+        platform specifc files that are meant to replace those in the www folder when needed. Though not shown in the diagram below, phonegap projects often also contain a plugins folder for the various PhoneGap plugins that can be used by an app.
+      </p>
+      <img src="img/walk/phonegap_structure.png" width="350" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Configure the App</h3>
+      <ul>
+        <li>
+          The config.xml file is used by the PhoneGap CLI and the Build service to configure and compile the app
+        </li>
+        <li>
+          The file contains app descriptors, such as name, id, version, and author
+        </li>
+        <li>
+          It also contains app settings and preferences, such as access permissions, supported platforms, icons and splash screens, and included plugins
+        </li>
+        <li>
+          See the exact configuration instructions in the official <a href="http://docs.phonegap.com/phonegap-build/configuring/">PhoneGap docs</a>.
+        </li>
+      </ul>
+      <img src="img/walk/xml_description.png" width="600" />
+      <img src="img/walk/xml_settings.png" width="600" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Install Plugins</h3>
+      <p>
+        <a href="http://docs.phonegap.com/plugin-apis/">Core Plugins</a>
+        <br />
+        <a href="http://cordova.apache.org/plugins/?q=">All Plugins</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Write HTML, CSS, and JS</h3>
+      <p>
+        Write the app's code in the same way you would create a regular web app, but optimized for mobile. Your code can be vanilla, or it can utilize popular frameworks like Bootstrap, React, or JQuery mobile. Plugin functionality can be incorporated in the
+        app's Javascript files. Check each plugin's documentation for the specific API calls to use.
+      </p>
+      <span>Below is some sample code from the demo PhoneGap app we created:</span>
+      <img src="img/walk/viewport.png" width="600" />
+      <img src="img/walk/body.png" width="600" />
+      <img src="img/walk/css.png" width="600" />
+      <img src="img/walk/js.png" width="600" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Test on the Mobile Developer App</h3>
+      <ul>
+        <li>
+          PhoneGap provides a free mobile developer app that can be used to preview your app.
+        </li>
+        <li>
+          Install and find more information about the app on the <a href="http://docs.phonegap.com/getting-started/2-install-mobile-app/">PhoneGap website</a>.
+        </li>
+        <li>
+          Use the <code>$ phonegap serve</code> command to start the server and receive an IP address to enter in the mobile app.
+        </li>
+      </ul>
+      <img src="img/walk/serve.png" width="600" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Compile and Test on PhoneGap Build</h3>
+      <ul>
+        <li>
+          Adobe provides a free cloud service for rapidly compiling and distributing PhoneGap apps
+        </li>
+        <li>
+          Register or login with an Adobe account
+        </li>
+      </ul>
+      <img src="img/walk/addtobuild.PNG" width="600" />
+      <ul>
+        <li>
+          Enable Hydration, which is used to automatically update the mobile app whenever the app is rebuilt.
+        </li>
+      </ul>
+      <img src="img/walk/plugins.png" width="600" />
     </div>
   </div>
 
