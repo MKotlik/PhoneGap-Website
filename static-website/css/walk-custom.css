@@ -1,0 +1,17 @@
+h1, h3 {
+  text-align: center;
+}
+
+span {
+  text-align: center;
+}
+
+img, p, span, ol, ul {
+  display: block;
+  margin: auto;
+}
+
+img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
