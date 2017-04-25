@@ -30,12 +30,6 @@
       </li>
     </ul>
   </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button">Search</button></li>
-    </ul>
-  </div>
 </div>
 <!-- END TOP BAR -->
 
@@ -48,13 +42,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 columns xcenter">
       <h3>Development Procedure</h3>
-      <p>
+      <span id="mission">
         Let's walk through the basic development process for a PhoneGap app.
-      </p>
+      </span>
       <span>In order to make and test your app, you'll have to: </span>
-      <ol>
+      <ol class="xlist">
         <li>Install the PhoneGap CLI.</li>
         <li>Create a GitHub repo for the project (necessary for the build service).</li>
         <li>Create a blank PhoneGap app</li>
@@ -69,7 +63,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Install PhoneGap CLI</h3>
-      <ul>
+      <ul class="xlist">
         <li>
           PhoneGap projects are written on a desktop through either the Desktop App or the CLI program
         </li>
@@ -90,9 +84,9 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Create a GitHub Repository</h3>
-      <p>
+      <span>
         Make sure to make the GitHub repo public and initialized with a README.
-      </p>
+      </span>
       <img src="img/walk/PhoneGapRepo.PNG" width="600" />
     </div>
   </div>
@@ -100,7 +94,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Create a Blank App</h3>
-      <p>
+      <p class="xpara">
         Create a blank project in the GitHub repo with the follow CLI commmand:
         <br />
         <code>$ phonegap create -n TestApp --template blank app</code>
@@ -123,7 +117,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Configure the App</h3>
-      <ul>
+      <ul class="xlist-large">
         <li>
           The config.xml file is used by the PhoneGap CLI and the Build service to configure and compile the app
         </li>
@@ -137,19 +131,32 @@
           See the exact configuration instructions in the official <a href="http://docs.phonegap.com/phonegap-build/configuring/">PhoneGap docs</a>.
         </li>
       </ul>
-      <img src="img/walk/xml_description.png" width="600" />
-      <img src="img/walk/xml_settings.png" width="600" />
+      <img id="config-img" src="img/walk/xml_description.png" width="600" />
+      <img id="settings-img" src="img/walk/xml_settings.png" width="600" />
     </div>
   </div>
 
   <div class="row">
     <div class="large-12 columns">
       <h3>Install Plugins</h3>
-      <p>
-        <a href="http://docs.phonegap.com/plugin-apis/">Core Plugins</a>
-        <br />
-        <a href="http://cordova.apache.org/plugins/?q=">All Plugins</a>
-      </p>
+      <ul class="xlist-large">
+        <li>
+          PhoneGap has many core and user-created plugins that add functionality like camera access and vibration.
+        </li>
+        <li>
+          Plugins can be listed in the config file, and will be included in the app automaically upon building.
+        </li>
+        <li>
+          A static plugin can get installed into the app with the command
+          <br />
+          <code>phonegap plugin add [plugin id]</code>
+          <br />
+          ex. <code>phonegap plugin add org.apache.cordova.device-motion</code>
+        </li>
+        <li>
+          See the lists of <a href="http://docs.phonegap.com/plugin-apis/">core plugins</a> and <a href="http://cordova.apache.org/plugins/?q=">all plugins</a> for more info.
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -171,7 +178,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Test on the Mobile Developer App</h3>
-      <ul>
+      <ul class="xlist-large">
         <li>
           PhoneGap provides a free mobile developer app that can be used to preview your app.
         </li>
@@ -189,7 +196,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Compile and Test on PhoneGap Build</h3>
-      <ul>
+      <ul class="xlist-large">
         <li>
           Adobe provides a free cloud service for rapidly compiling and distributing PhoneGap apps
         </li>
@@ -198,7 +205,7 @@
         </li>
       </ul>
       <img src="img/walk/addtobuild.PNG" width="600" />
-      <ul>
+      <ul class="xlist-large">
         <li>
           Enable Hydration, which is used to automatically update the mobile app whenever the app is rebuilt.
         </li>
